@@ -337,7 +337,7 @@
     <h2>Your Cart</h2>
     <ul id="cart-items"></ul>
     <p>Total: ₦<span id="cart-total">0</span></p>
-    <button id="checkout-whatsapp">Order now</button>
+    <button id="checkout-whatsapp">Order via WhatsApp</button>
     <button id="view-full-cart">View Full Cart</button>
   </div>
   <script>
@@ -346,10 +346,10 @@
   });
 </script>
 <div id="mini-cart" style="position: fixed; bottom: 20px; right: 20px; background: #222; color: white; padding: 10px; border-radius: 8px; cursor: move;">
-  🛒<button onclick="shrinkMiniCart()">🛑Shrink Cart</button>
+  🛒<button onclick="shrinkMiniCart()">🛑 Shrink Cart</button>
 
 <!-- Button to expand mini cart -->
-<button onclick="expandMiniCart()">✅show Cart</button>
+<button onclick="expandMiniCart()">✅ Expand Cart</button>
   
 <button onclick="window.location='cart.html'">View Cart</button>
 <style>
@@ -363,8 +363,7 @@
   padding: 10px;
   border-radius: 8px;
   z-index: 9999;
-  max-width: 250px;
-  overflow: hidden;
+  width: 250px;
 }
 
 #cart.shrunk {
@@ -376,10 +375,7 @@
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: black;
-  background-color: #222;
-  max-height: 15px;
-  
+    max-height: 15px;
 }
 </style>
 </div>
