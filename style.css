@@ -369,7 +369,7 @@ header h1 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   font-family: 'Segoe UI', sans-serif;
-  max-height: 499px;
+  max-height: 500px;
 }
 .section-title {
   color: black;
@@ -390,7 +390,7 @@ header h1 {
   padding-left: 0;
   margin-bottom: 20px;
   list-style: none;
- max-height: 197px;
+
 
 
 
@@ -484,7 +484,9 @@ right: 90px;
      margin-bottom: 80px;
     
   }
-
+  #cart-items{
+    max-height: 197px;
+  }
 }
 @media (max-width: 710px) {
   .product-grid {
