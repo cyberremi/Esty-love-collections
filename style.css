@@ -538,9 +538,7 @@ right: 90px;
     right: 150px;
     
   }
-  #cart-items {
-    max-height: 220px;
-  }
+
   .cont{
     display: block;
     flex-direction: column;
