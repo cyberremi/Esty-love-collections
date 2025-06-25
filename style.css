@@ -488,6 +488,18 @@ right: 90px;
     max-height: 197px;
   }
 }*/
+@media (min-width: 1110px){
+  #cart {
+     margin-bottom: 80px;
+     
+     
+    
+  }
+  #cart-items{
+    max-height: 180px;
+  }
+  
+}
 @media (max-width: 710px) {
   .product-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
