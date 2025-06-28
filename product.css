@@ -373,8 +373,11 @@ background-color: #000;
     padding: 0;
     scroll-behavior: smooth;
    max-width: 100%;
-
-
+  }
+  nav {
+    padding-right: 65px;
+    font-size: larger;
+    
   }
   .shop3{
     display: none;
