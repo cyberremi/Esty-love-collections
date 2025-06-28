@@ -374,8 +374,8 @@ background-color: #000;
     scroll-behavior: smooth;
    max-width: 100%;
   }
-  nav {
-    padding-right: 90px;
+  .nav {
+    padding-right: 65px;
     font-size: larger;
     
   }
