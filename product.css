@@ -375,7 +375,7 @@ background-color: #000;
    max-width: 100%;
   }
   .nav {
-    padding-right: 65px;
+    padding-right: 80px;
     font-size: larger;
     
   }
@@ -445,7 +445,7 @@ background-color: #000;
   }
   nav {
   position: relative;
-  right: 25px;
+  right: 30px;
   width: 3px;
   
   }
