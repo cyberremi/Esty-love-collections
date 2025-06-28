@@ -1,124 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Cart | Street Fusion Nigeria</title>
-  <meta name="robots" content="noindex, nofollow" /> <!-- Prevent indexing cart -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Street Fusion is a Nigerian street wear brand inspired by youth culture, street style, and global creativity. Learn more about our mission and vibe.">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Replace with your EmailJS public key
-    })();
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - EsttyChic Collections</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #111, #222);
-      color: #f0f0f0;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f6;
+      color: #333;
     }
-    button {
-        background-color: black;
-        color: white;
-        padding: 10px;
-        border-radius: 20px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      background: #1c1c1c;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-    }
-    h1, h2 {
-      color: #fff;
+
+    header {
+      background-color: #e91e63;
+      color: white;
       text-align: center;
+      padding: 40px 20px;
     }
-    p {
-      line-height: 1.8;
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
     }
-    ul {
-      list-style-type: square;
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #d81b60;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-header h2 {
+      font-size: 2.5rem;
+      color: #c2185b;
+    }
+
+    .about-header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .about-sections {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .about-section {
+      background-color: white;
+      flex: 1 1 45%;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .about-section h3 {
+      color: #e91e63;
+      margin-bottom: 15px;
+    }
+
+    .about-section p, .about-section ul {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .about-section ul {
       padding-left: 20px;
     }
-    a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-    .social-links {
-      text-align: center;
-      margin-top: 20px;
-    }
-    form {
+
+    .image-section {
       margin-top: 40px;
-      background: #111;
-      padding: 20px;
+      text-align: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-section {
+      margin-top: 60px;
+      background: #ffe6f0;
+      padding: 40px;
       border-radius: 10px;
     }
-    input, textarea {
-      width: 100%;
-      margin: 10px 0;
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
+
+    .testimonial-section h3 {
+      text-align: center;
+      color: #c2185b;
+      margin-bottom: 30px;
     }
-    button {
-      background-color: #00aaff;
+
+    .testimonial {
+      margin-bottom: 20px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .cta-section {
+      text-align: center;
+      margin-top: 60px;
+      background-color: #fce4ec;
+      padding: 50px 20px;
+      border-radius: 12px;
+    }
+
+    .cta-section h3 {
+      color: #e91e63;
+      font-size: 2rem;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+      margin: 15px 0;
+    }
+
+    .cta-section a {
+      background-color: #e91e63;
       color: white;
-      padding: 10px 20px;
-      border: none;
+      padding: 12px 25px;
       border-radius: 6px;
-      cursor: pointer;
       font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
     }
-    button:hover {
-      background-color: #008fcc;
+
+    .cta-section a:hover {
+      background-color: #d81b60;
+    }
+
+    footer {
+      margin-top: 60px;
+      background-color: #880e4f;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-sections {
+        flex-direction: column;
+      }
+
+      .about-section {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
-    <button onclick="location.href='store.html'">shop now</button>
-  <div class="container">
-    <h1>About Street Fusion</h1>
-    <p><strong>Street Fusion</strong> is a bold expression of culture, creativity, and identity. Born from the vibrant streets of Nigeria and inspired by global fashion trends, Street Fusion is more than just apparel — it’s a lifestyle.</p>
 
-    <p>We create <strong>high-quality urban wear</strong> that speaks to the modern generation — people who want to stand out, tell their story, and wear their vibe.</p>
+  <header>
+    <h1>EsttyChic Collections</h1>
+    <p>Where Elegance Meets Affordability – Fashion for Every Chic Woman</p>
+  </header>
 
-    <h2>What We Offer</h2>
-    <ul>
-      <li>Custom-designed T-shirts, hoodies, and accessories</li>
-      <li>Limited drops & exclusive collections</li>
-      <li>Global shipping (where available)</li>
-    </ul>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/shop">Shop</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
 
-    <h2>Connect With Us</h2>
-    <div class="social-links">
-      📸 <a href="https://www.instagram.com/streetfusionwear" target="_blank">@streetfusionwear</a><br>
-      📧 <a href="mailto:support@streetfusion.net">support@streetfusion.net</a>
+  <main class="container">
+    <section class="about-header">
+      <h2>About EsttyChic</h2>
+      <p>Empowering Women with Style — One Bag, Wig, and Outfit at a Time.</p>
+    </section>
+
+    <section class="about-sections">
+      <div class="about-section">
+        <h3>Our Mission</h3>
+        <p>EsttyChic Collections is committed to helping women feel confident, stylish, and beautiful. We curate high-quality fashion items that blend elegance with affordability — because every woman deserves to shine, no matter her budget.</p>
+      </div>
+
+      <div class="about-section">
+        <h3>Why We Started</h3>
+        <p>We saw too many women choosing between affordability and quality — so we decided to bridge the gap. EsttyChic was built on the dream of making fashion accessible, trendy, and empowering for every woman.</p>
+      </div>
+
+      <div class="about-section">
+        <h3>Our Values</h3>
+        <ul>
+          <li><strong>Confidence:</strong> Our styles are designed to boost self-expression and confidence.</li>
+          <li><strong>Quality:</strong> Every item is carefully selected and reviewed for top-tier quality.</li>
+          <li><strong>Affordability:</strong> Beautiful fashion should never break the bank.</li>
+          <li><strong>Community:</strong> We grow by listening to our customers and creating for real women.</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h3>Behind the Brand</h3>
+        <p>EsttyChic is proudly founded in Nigeria and inspired by bold, fashionable African women. From trending handbags to stylish wigs and modern clothing — our collections reflect the energy, elegance, and versatility of our people.</p>
+      </div>
+    </section>
+
+    <div class="image-section">
+      <img src="https://via.placeholder.com/1000x500?text=Your+Style+Starts+Here" alt="EsttyChic Fashion Collection">
     </div>
 
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <input type="text" name="from_name" placeholder="Your Name" required />
-      <input type="email" name="reply_to" placeholder="Your Email" required />
-      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+    <section class="testimonial-section">
+      <h3>What Our Customers Say</h3>
+      <div class="testimonial">
+        <p>"I bought a wig and a handbag from EsttyChic and got compliments the same day! Everything feels high-end without the high price."</p>
+        <span>– Amaka O., Abuja</span>
+      </div>
+      <div class="testimonial">
+        <p>"Their delivery was fast, and the clothes fit perfectly! I love the vibe of the brand. 10/10!"</p>
+        <span>– Ruth O., Lagos</span>
+      </div>
+    </section>
 
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-        .then(() => alert("Message sent!"), (error) => alert("Error: " + error.text));
-    });
-  </script>
+    <section class="cta-section">
+      <h3>Join the EsttyChic Family</h3>
+      <p>Be the first to discover new drops, exclusive sales, and fashion tips made just for you.</p>
+      <a href="/shop">Start Shopping</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 EsttyChic Collections. Designed with love for bold, beautiful women.
+  </footer>
+
 </body>
 </html>
